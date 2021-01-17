@@ -8,7 +8,7 @@ class Star{
         this.body = Bodies.rectangle(x, y, 30, 30, options);
         this.width = 30;
         this.height = 30;
-        this.image = loadImage("images/star.png");
+        this.image = loadImage("star.png");
         World.add(world, this.body);
       }
       display(){
