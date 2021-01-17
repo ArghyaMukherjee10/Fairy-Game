@@ -12,10 +12,10 @@ const Body = Matter.Body;
 
 function preload()
 {
-	starImg = loadImage("images/star.png")
-	fairyImg = loadAnimation("images/fairyImage1.png","images/fairyImage2.png");
-	bgImg = loadImage("images/starNight.png");
-	fairyVoice = loadSound("sound/JoyMusic.mp3");
+	starImg = loadImage("star.png")
+	fairyImg = loadAnimation("fairyImage1.png","fairyImage2.png");
+	bgImg = loadImage("starNight.png");
+	fairyVoice = loadSound("JoyMusic.mp3");
 
 }
 
@@ -24,7 +24,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 ground = new Ground(400,500,800,15)
-	// fairyVoice.play();
+	 fairyVoice.play();
 
 	fairy = createSprite(130, 520);
 	fairy.addAnimation("fairyflying",fairyImg);  
